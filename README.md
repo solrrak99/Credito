@@ -2,7 +2,7 @@
 ## TL;DR
 Implementar un programa que determine si un número de tarjeta de crédito proporcionado es válido según el algoritmo de Luhn.
 
-Número: 378282246310005
+Número: 378282246310005<br>
 AMEX
 
 ## Antecedentes
@@ -41,12 +41,12 @@ Ahora vamos a agregar esa suma (27) a la suma de los dígitos que no fueron mult
 
 27 + 3 + 8 + 8 + 2 + 6 + 1 + 0 + 5 = 60<br>
 
-Yup, el último dígito en esa suma (60) es un 0, por lo que mi tarjeta es legítima!<br>
+Sí, el último dígito en esa suma (60) es un 0, por lo que mi tarjeta es legítima!<br>
 
 Por lo tanto, la validación de números de tarjetas de crédito no es difícil, pero se pone un poco tediosa a mano.
 
 ## Especificación
-*  Escriba un programa que solicite al usuario un número de tarjeta de crédito y luego informe*  si se trata de un número de tarjeta American Express, MasterCard o Visa válido, según las definiciones de cada formato en este documento.
+*  Escriba un programa que solicite al usuario un número de tarjeta de crédito y luego informe si se trata de un número de tarjeta American Express, MasterCard o Visa válido, según las definiciones de cada formato en este documento.
 
 * La última línea de salida de su programa sea AMEX o MASTERCARD o VISA o INVALIDA, nada más, nada menos.
 
