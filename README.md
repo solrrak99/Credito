@@ -22,6 +22,7 @@ Si el último dígito del total es 0 (o, ponga más formalmente, si el módulo 1
 Eso es un poco confuso, así que vamos a probar un ejemplo con mi AmEx: 378282246310005.<br>
 
 Para el bien de la discusión, vamos a subrayar primero cada otro dígito, comenzando con el número de segundo a último dígito:<br>
+ _  _  _  _  _  _  _  _  _<br>
 
 3 7 8 2 8 2 2 4 6 3 1 0 0 0 5<br>
 
