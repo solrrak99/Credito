@@ -10,79 +10,90 @@ namespace Credito
         {
             System.Console.Write("Ingrese el numero de su Tarjeta: ");
             string numeroTarjeta = Console.ReadLine();
-            var amexpres= (34,37);
+            var americanexpres= (34,37);
+            var amexpres =  Convert.ToBoolean(americanexpres);
             var MasterCard = (51, 52, 53, 54, 55);
-            var visa = 4;
-            var uno = 0;
-            String Rot = numeroTarjeta.Substring(uno);
-            var dos = 1;
-            var tre = 2;
-            String Rnt = numeroTarjeta.Substring(tre);
-            var U = 4;
-            String Rat = numeroTarjeta.Substring(U);
-            var C = 6;
-            String Ret = numeroTarjeta.Substring(C);
-            var S = 8;
-            String Rrt = numeroTarjeta.Substring(S);
-            var O = 10;
-            String Rtt = numeroTarjeta.Substring(O);
-            var N = 12;
-            String Ryt = numeroTarjeta.Substring(N);
-            var T = 14;
-            String Rut = numeroTarjeta.Substring(T);
-            var Y = 16;
-            String Rit = numeroTarjeta.Substring(Y);
-            var K=3;
-            String RYt = numeroTarjeta.Substring(K);
-            var X=5;
-            String RXt = numeroTarjeta.Substring(X);
-            var Z=7;
-            String RZt = numeroTarjeta.Substring(Z);
-            var G=9;
-            String RGt = numeroTarjeta.Substring(G);
-            var Ñ=11;
-            String RÑt = numeroTarjeta.Substring(Ñ);
-            var M=13;
-            String RMt = numeroTarjeta.Substring(M);
-            var LK=15;
-            String RLKt = numeroTarjeta.Substring(LK);
+            var resMast =  Convert.ToBoolean(MasterCard);
+            int visa = 4;
+            var resvisa =  Convert.ToBoolean(visa);
+            int uno = 0;
+            var cero =  Convert.ToBoolean(uno);
+            int n = 2; 
+            String un = numeroTarjeta.Substring(0,1);
+            String dos = numeroTarjeta.Substring(1,2);
+            String tres = numeroTarjeta.Substring(2,3);
+            String cuatro = numeroTarjeta.Substring(3,4);
+            String cinco = numeroTarjeta.Substring(4,5);
+            String seis = numeroTarjeta.Substring(5,6);
+            String siete = numeroTarjeta.Substring(6,7);
+            String ocho = numeroTarjeta.Substring(7,8);
+            String nueve = numeroTarjeta.Substring(9,10);
+            String dies = numeroTarjeta.Substring(10,11);
+            String once = numeroTarjeta.Substring(11,12);
+            String doce = numeroTarjeta.Substring(12,13);
+            String trece = numeroTarjeta.Substring(13,14);
+            String catorese = numeroTarjeta.Substring(15,16);
+            String quince = numeroTarjeta.Substring(16);
 
-            String substring = numeroTarjeta.Substring(uno);
-            String Mas = numeroTarjeta.Substring(uno,dos);
-            String Amex = numeroTarjeta.Substring(uno,dos);           
-            if(substring = visa){
+            String substring = numeroTarjeta.Substring(0,1);
+            var Sub =  Convert.ToBoolean(substring);
+            String Mas = numeroTarjeta.Substring(0,2);
+            var MAS =  Convert.ToBoolean(Mas);
+            String Amex = numeroTarjeta.Substring(0,2); 
+            var Am = Convert.ToBoolean(Amex);
+            if(Sub = resvisa){
             Console.WriteLine("tu targeta es: Visa");
-            var Xd= Rot * tre;
-            var Xd1= Rnt * tre;
-            var Xd2= Rat*tre;
-            var Xd3=Ret*tre;
-            var Xd4= Rrt*tre;
-            var Xd5= Rtt*tre;
-            var Xd6=Ryt*tre;
-            var Xdu=Xd+Xd1+Xd2+Xd3+Xd4+Xd5+Xd6;
-            var Xdt=Xdu+RYt+RXt+RZt+RGt+RÑt+RMt;
-            if(Xdt=60){
-                Console.WriteLine("Tu Targeta es lejitima");
+            int num = Convert.ToInt32(dos);
+            var Xd= num * n;
+            int num1 = Convert.ToInt32(cuatro);
+            var Xd1= num1 * n;
+            int num2 = Convert.ToInt32(seis);         
+            var Xd2= num2*n;
+            int num3 = Convert.ToInt32(ocho);
+            var Xd3=num3*n;
+            int num4 = Convert.ToInt32(dies);
+            var Xd4= num4*n;
+            int num5 = Convert.ToInt32(doce);
+            var Xd5= num5*n;
+            int num6 = Convert.ToInt32(catorese);
+            var Xd6= num6*n;
+            int num7 = Convert.ToInt32(quince);
+            var Xd7= num7*n;
+            var Xdu=Xd+Xd1+Xd2+Xd3+Xd4+Xd5+Xd6+Xd7;
+            var Xdt=uno+tres+cinco+siete+nueve+once+trece;
+            String final = Xdt.Substring(1);
+            var Final =  Convert.ToBoolean(final);
+            if(cero=Final){
+               Console.WriteLine("Tu Targeta es lejitima");
+                }
+            else{
+               Console.WriteLine("Tu Targeta es falsa");
+            }
             }
             else{
-                Console.WriteLine("Tu Targeta es falsa");
-            }
-            }
-            else{
-            if(Mas=MasterCard){
+            if(MAS=resMast){
             Console.WriteLine("Tu Targeta es: MasterCard");
-            var Xdm= Rot * tre;
-            var Xds= Rnt * tre;
-            var Xdt= Rat*tre;
-            var Xdr=Ret*tre;
-            var Xde= Rrt*tre;
-            var Xdl= Rtt*tre;
-            var Xdf=Ryt*tre;
-            var Xdk= XdRut*tre;
-            var XdP=Rit*tre;
-            var Xdz=Xdm+Xds+Xdt+Xdr+Xde+Xdl+Xdf+XdP+Xdk;
-            var Xdp=Xdu+RYt+RXt+RZt+RGt+RÑt+RMt+RLKt;
-            if(Xdp=60){
+            int num = Convert.ToInt32(dos);
+            var Xd= num * n;
+            int num1 = Convert.ToInt32(cuatro);
+            var Xd1= num1 * n;
+            int num2 = Convert.ToInt32(seis);         
+            var Xd2= num2*n;
+            int num3 = Convert.ToInt32(ocho);
+            var Xd3=num3*n;
+            int num4 = Convert.ToInt32(dies);
+            var Xd4= num4*n;
+            int num5 = Convert.ToInt32(doce);
+            var Xd5= num5*n;
+            int num6 = Convert.ToInt32(catorese);
+            var Xd6= num6*n;
+            int num7 = Convert.ToInt32(quince);
+            var Xd7= num7*n;
+            var Xdu=Xd+Xd1+Xd2+Xd3+Xd4+Xd5+Xd6+Xd7;
+            var Xdt=uno+tres+cinco+siete+nueve+once+trece;
+            String final = Xdt.Substring(1);
+            var Final =  Convert.ToBoolean(final);
+            if(MAS=Final){
                 Console.WriteLine("Tu Targeta es lejitima");
             }
             else{
@@ -90,20 +101,30 @@ namespace Credito
             }
             }
             else{
-            if(Amex=amexpres){
+            if(Am=amexpres){
             Console.WriteLine("Tu Targeta es: American Express");
-            var Xd7= Rot * tre;
-            var Xd8= Rnt * tre;
-            var Xd9= Rat*tre;
-            var Xd10=Ret*tre;
-            var Xd11= Rrt*tre;
-            var Xd12= Rtt*tre;
-            var Xd13=Ryt*tre;
-            var Xd14= XdRut*tre;
-            var Xdz16=Xd7+Xd8+Xd9+Xd10+Xd11+Xd12+Xd13+Xd14;
-            var Xdp17=Xdu+RYt+RXt+RZt+RGt+RÑt+RMt+RLKt;
-            if(Xdp17=60){
-                Console.WriteLine("Tu Targeta es lejitima");
+             int num = Convert.ToInt32(dos);
+            var Xd= num * n;
+            int num1 = Convert.ToInt32(cuatro);
+            var Xd1= num1 * n;
+            int num2 = Convert.ToInt32(seis);         
+            var Xd2= num2*n;
+            int num3 = Convert.ToInt32(ocho);
+            var Xd3=num3*n;
+            int num4 = Convert.ToInt32(dies);
+            var Xd4= num4*n;
+            int num5 = Convert.ToInt32(doce);
+            var Xd5= num5*n;
+            int num6 = Convert.ToInt32(catorese);
+            var Xd6= num6*n;
+            int num7 = Convert.ToInt32(quince);
+            var Xd7= num7*n;
+            var Xdu=Xd+Xd1+Xd2+Xd3+Xd4+Xd5+Xd6+Xd7;
+            var Xdt=uno+tres+cinco+siete+nueve+once+trece;
+            String final = Xdt.Substring(1);
+            var Final =  Convert.ToBoolean(final);
+            if(MAS=Final){
+              Console.WriteLine("Tu Targeta es lejitima");
             }
             else{
                 Console.WriteLine("Tu Targeta es falsa");
@@ -114,21 +135,14 @@ namespace Credito
             }
             }
             }
-            ///while (numeroTarjeta = visa) 
+            //while (numeroTarjeta = visa) 
             //{
             //Console.WriteLine("Current value of n is {0}", chars);
             //n++;
             //}
             //Console.WriteLine(numeroTarjeta.TipoDeTarjeta());
-        }
+        //}
 
     }
-
-    public static class ValidarTarjeta
-    {
-        public static string TipoDeTarjeta(this string input)
-        {
-            return "VISA O MASTERCARD O AMEX O INVALIDA";
-        }
     }
 }
