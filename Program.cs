@@ -135,14 +135,8 @@ namespace Credito
             }
             }
             }
-            //while (numeroTarjeta = visa) 
-            //{
-            //Console.WriteLine("Current value of n is {0}", chars);
-            //n++;
-            //}
-            //Console.WriteLine(numeroTarjeta.TipoDeTarjeta());
-        //}
-
+            //Carlos Alejandro Villegas Nuñez 
+            //Sergio Reyes Aceves
     }
     }
 }
